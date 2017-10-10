@@ -1,3 +1,3 @@
-# p3
+# p3 link in Sublime Text
 
-<http://p3.samanthi22.com>
+[P3 link](http://p3.samanthi22.com)
