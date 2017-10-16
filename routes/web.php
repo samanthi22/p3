@@ -13,3 +13,15 @@
 
 Route::get('/', 'WelcomeController@amount');
 Route::get('/double/', 'WelcomeController@double_amount');
+
+Route::get('/debugbar', function () {
+
+    $data = ['foo' => 'bar'];
+    Debugbar::info($data);
+    Debugbar::info('Current environment: '.App::environment());
+    Debugbar::error('Error!');
+    Debugbar::warning('Watch out…');
+    Debugbar::addMessage('Another message', 'mylabel');
+
+    return 'Just demoing some of the features of Debugbar';
+});
