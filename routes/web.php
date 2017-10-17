@@ -18,8 +18,8 @@ Route::get('/env', function () {
     dump(config('app.url'));
 });
 
-Route::get('/', 'WelcomeController@amount');
-Route::get('/double/', 'WelcomeController@double_amount');
+Route::get('/', 'WelcomeController@index');
+Route::get('/amount', 'WelcomeController@amount');
 
 Route::get('/debugbar', function () {
 
