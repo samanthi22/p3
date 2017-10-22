@@ -21,11 +21,13 @@ h1 {
 }*/
 
 .display {
-	color: black;
-	border: 2px solid orange;
+	padding-top: 0px;
+	color: white;
+	background-color: orange;
 }
 
 .amount {
+	font-size: 18px;
 	color: purple;
 	font-weight: bold;
 }
