@@ -11,4 +11,6 @@
 |
 */
 
+Route::get('/', 'WelcomeController@index');
 Route::get('/form', 'WelcomeController@form');
+Route::get('/form/submit', 'WelcomeController@submit');
