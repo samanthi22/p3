@@ -11,9 +11,15 @@ class WelcomeController extends Controller
 	}
 
 	public function form (Request $request) {
+
+		$tip = $request->input('tip_amount');
+		$round = $request->input('round_up');
+		$girlfriend = $request->input('girlfriend');
+
 		return view('bill.form')->with([
 			'round' => $round,
-			'girlfriend' => $girlfriend
+			'girlfriend' => $girlfriend,
+			'tip' => $tip
 			]);
 	}
 
@@ -56,6 +62,7 @@ class WelcomeController extends Controller
 		'double_amount' => $double_amount,
 		'how_many_people' => $how_many_people,
 		'how_much_tab' => $how_much_tab,
+		'tip' => $tip,
 		'round' => $round,
 		'girlfriend' => $girlfriend
 		]);
