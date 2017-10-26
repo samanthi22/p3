@@ -20,9 +20,9 @@
 		<p><label for='tip_amount'>How was the service?</label><select name='tip_amount' id='tip_amount'><option value='18' {{ old('tip_amount')=='18' ? 'selected' : '' }} >Good (18% tip) </option><option value='20' {{ old('tip_amount')=='20' ? 'selected' : '' }} > Excellent (20% tip) </option>
 		</select></p>
 
-		<p><b>Round up?</b> <input type="checkbox" name="round_up" id="round_up" {{ old('round_up') ? 'CHECKED' : ''}}"><label for="round_up"> Yes </label></p>
+		<p><b>Round up?</b> <input type="checkbox" name="round_up" id="round_up" {{ old('round_up') ? 'CHECKED' : ''}}><label for="round_up"> Yes </label></p>
 
-		<p><b>Anyone paying for their girlfriend's tab?</b> <input type="checkbox" name="girlfriend" id="girlfriend" value="{{ old('girlfriend') ? 'CHECKED' : ''}}"><label for="girlfriend"> Yes </label></p>
+		<p><b>Anyone paying for their girlfriend's tab?</b> <input type="checkbox" name="girlfriend" id="girlfriend" {{ old('girlfriend') ? 'CHECKED' : ''}}><label for="girlfriend"> Yes </label></p>
 
 		<p>
 		<input type="submit" value="Calculate"></p>
