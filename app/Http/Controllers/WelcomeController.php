@@ -11,7 +11,10 @@ class WelcomeController extends Controller
 	}
 
 	public function form (Request $request) {
-		return view('bill.form');
+		return view('bill.form')->with([
+			'round' => $round,
+			'girlfriend' => $girlfriend
+			]);
 	}
 
 	public function submit(Request $request) {
