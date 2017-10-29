@@ -31,7 +31,6 @@
 @endsection
 
 @section('errors')
-	<h3> Errors: </h3>
 	@if($errors->any())
 	<div class="error">
     <ul>
