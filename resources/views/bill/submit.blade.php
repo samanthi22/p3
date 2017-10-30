@@ -9,9 +9,9 @@
 @endpush
 
 @section('content')
-	<h3> Results... </h3>
 	@if($how_many_people != null)
 			@if($how_much_tab != null) 
+			<h2> Results... </h2>
 			<div class='display'>
 			<h3> Everyone owes <span class='amount'>$ {{ $each_pay }} </span></h3>
 			</div>

@@ -32,7 +32,7 @@
 
 @section('errors')
 		@if($errors->any())
-		<h3> Errors... </h3>
+		<h2> Errors... </h2>
 			<div class="error">
     			<ul>
         		@foreach ($errors->all() as $error)
