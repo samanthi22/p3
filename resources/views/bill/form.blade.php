@@ -31,15 +31,17 @@
 @endsection
 
 @section('errors')
-	@if($errors->any())
-	<div class="error">
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    </div>
-@endif
+
+	<h3> Errors... </h3>
+		@if($errors->any())
+			<div class="error">
+    			<ul>
+        		@foreach ($errors->all() as $error)
+            		<li>{{ $error }}</li>
+        		@endforeach
+    			</ul>
+    		</div>
+		@endif
 @endsection
 
 
