@@ -31,9 +31,8 @@
 @endsection
 
 @section('errors')
-
-	<h3> Errors... </h3>
 		@if($errors->any())
+		<h3> Errors... </h3>
 			<div class="error">
     			<ul>
         		@foreach ($errors->all() as $error)
