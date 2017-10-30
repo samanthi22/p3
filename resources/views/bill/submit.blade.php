@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-	<h4> Results... </h4>
+	<h3> Results... </h3>
 	@if($how_many_people != null)
 			@if($how_much_tab != null) 
 			<div class='display'>
